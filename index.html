@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styl.css">
+    <title>E-Shopping</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="left">
+                <img src="images/logo.png" alt="" >
+                <h1>E-Shopping</h1>
+            </div>
+            <input type="text" placeholder="Search E-Commerce">
+            <div class="right">
+                <div>
+                    <img src="images/cart.png" alt="">
+                    <button id="basket-btn"> Cart</button>
+                </div>
+                <div>
+                    <img src="images/login.png" alt=""> 
+                    <button id="login-btn">Log In</button>
+                </div>
+                <div>
+                    <img src="images/key.png" alt="">
+                    <button id="register-btn"> Register</button>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            <marquee>Please pay attention to our <span>“other”</span> category. 
+            Here you will find popular and extra special and discounted products.
+            </marquee>
+        </div>
+    </header>
+    <!-- category ve product -->
+    <main>
+        <!-- Category -->
+        <section id="category">
+            <h1>Categories</h1>
+            <div class="category-card">
+                <!-- <div class="card">
+                    <img src="https://picsum.photos/640/640?r=4892" alt="">
+                    <span>Shoes</span>
+                </div> -->
+            </div>
+        </section>
+        <!-- product -->
+        <section id="product">
+            <h1>PRODUCTS</h1>
+            <div class="products">
+                <!-- js ya aktarılan html yapı -->
+                <!-- <div class="product-card">
+                    <img src="https://picsum.photos/640/640?r=60" alt="">
+                    <p>sss</p>
+                    <p>555</p>
+                    <div class="product-price">
+                        <button id="add-btn">Add to Cart</button>
+                        <button id="buy-btn">Buy Now</button>
+                    </div>
+                    <span>777 $</span>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <!-- basket modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Your have add to shopping cart list</h4>
+                <hr>
+                <div class="item-card">
+                    <!-- <div class="card">
+                        <img src="https://picsum.photos/640/640?r=60" alt="">
+                        <div class="card-info">
+                            <div class="card-add">
+                                <p>ürün ismi</p>
+                                <p>fiyatı</p>
+                            </div>
+                            <div class="card-btn">
+                                <button><img src="images/up-arrow.png" alt=""></button>
+                                <span>miktar</span>
+                                <button><img src="images/up-arrow (2).png" alt=""></button>
+                            </div>
+                        </div>
+                        <button class="btn-delete"><img src="images/delete.png" alt=""></button>
+                    </div> -->
+                </div>
+                <button id="close-basket"><img src="images/close.png" alt=""></button>
+                <div class="total">
+                    <div class="total-price">
+                        <p class="total-p">Cart Subtotal : </p>
+                        <p class="total-s"></p>
+                    </div>
+                    <button class="payment" id="payment-btn">Proceed to checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--login modal -->
+    <div class="modal-login">
+        <div class="modal-login-content">
+            <div class="login-img">
+                <img src="images/sing-in.png" alt="">
+                <button id="close-login"><img src="images/close (1).png" alt=""></button>
+            </div>
+        </div>
+    </div>
+    <!--register modal -->
+    <div class="modal-register">
+        <div class="modal-register-content">
+            <div class="register-img">
+                <img src="images/sing-up.jfif" alt="">
+                <button id="close-register"><img src="images/close (1).png" alt=""></button>
+            </div>
+        </div>
+    </div>
+    <!--payment modal -->
+    <div class="modal-payment">
+        <div class="modal-payment-content">
+            <h4>Payment Options</h4>
+            <p>Delivery change: FREE</p>
+            <p>Amount to be paid: <span class="payment-span"></span></p>
+            
+            <div class="payment-img">
+                <img src="images/payment.png" alt="">
+                <button id="close-payment"><img src="images/close (1).png" alt=""></button>
+                <button class="payment-now" id="pay-btn">Pay Now</button>
+            </div>
+        </div>
+    </div>
+    <!--checkout modal -->
+    <div class="modal-chechout">
+        <div class="modal-chechout-content">
+            <div class="register-img">
+                <img src="images/payment-finish.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- buy now modal -->
+    <div class="modal-buynow">
+        <div class="modal-pay-content">
+            <h4 class="h4">Pay Now <span>(10% discount)</span></h4>
+            <!-- <div class="card-buy">
+                <img src="https://picsum.photos/640/640?r=60" alt="">
+                <div class="card-info">
+                    <div class="card-add">
+                        <p>ürün ismi</p>
+                        <p>fiyatı</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="buynow-img">
+                <img src="images/payment.png" alt="">
+                <button id="close-buynow"><img src="images/close (1).png" alt=""></button>
+                <button class="pay-now" id="paynow-btn">Pay Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-main">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="">
+                <h1>E-Shopping</h1>
+            </div>
+            <p>
+                Copyright &copy; 2023 | Udemig eğitim çalışmasıdır. by <a
+                href="https://www.linkedin.com/in/hasan-ulusoy-react"> Hasan ULUSOY</a>
+            </p>
+        </div>
+    </div>
+
+
+
+    <script  type="module" src="main.js"></script>
+</body>
+</html>
